@@ -286,17 +286,28 @@ a {
 }
 
 @media (max-width: 1124px) {
+    .body {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .main-content {
         flex-direction: column;
         justify-content: center;
         text-align: center;
         align-items: center;
         gap: 40px;
+        padding: 0px;
+    }
+
+    .profile-image img {
+        width: 250px;
     }
 
     .profile-content {
         max-width: 100%;
         min-width: auto;
+        text-align: center;
     }
 
     .social-media {
