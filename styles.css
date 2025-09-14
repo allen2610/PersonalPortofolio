@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-wrap: break-word;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #9290C3;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.25);
+}
+
+.nav-container {
+    background-color: rgba(44, 44, 44, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: #000000 0px 1px 8px 0px;
+}
+
+.nav-contents {
+    display: flex;
+    gap: 32px;
+    font-size: 18px;
+    font-weight: 50;
+    font-style: italic;
+}
+
+.nav-contents a:hover {
+    color: #9290C3;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-shadow: 4px 2px 10px #9290C3;
+}
+
+h1:hover {
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.05) translateX(50px);
+    color: #9290C3;
+    text-shadow: 6px 4px 16px #535C91;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+h2:hover {
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    color: #535C91;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.25);
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #9290C3;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.25);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-content {
+    margin: 100px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.profile-content {
+    max-width: 1000px;
+    min-width: 400px;
+}
+
+.type span{
+    color: #9290C3;
+}
+
+.type span::before{
+    content: "Software Engineer";
+    animation: words 6s infinite;
+}
+
+@keyframes words {
+    0%{
+        content: "Software Engineer";
+        left: 10px;
+    }
+    34%{
+        content: "Product Designer";
+        left: 20px;
+    }
+    67%{
+        content: "Frontend Developer";
+        left: 30px;
+    }
+}
+
+.profile-image :hover {
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(-50px) scale(1.1);
+}
+
+.social-media {
+    font-size: 30px;
+    font-weight: 700;
+    color:#535C91;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 32px;
+}
+
+.social-media-icons img {
+    transition: transform 0.6s;
+    transition-timing-function: ease-in-out;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 4px #9290C3);
+}
+
+.download-button {
+    background-color: #535C91;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 32px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: #FFFFFF 0px 0px 8px 0px;
+    margin-top: 24px;
+}
+
+.download-button:hover {
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    background-color: #9290C3;
+    box-shadow: #FFFFFF 0px 0px 16px 0px;
+    transform: translateY(5px);
+}
+
+.projects {
+    margin: 100px;
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.project-item {
+    background-color: rgba(44, 44, 44, 0.7);
+    padding: 32px 32px;
+    border-radius: 12px;
+    box-shadow: #9290C3 0px 2px 8px 0px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 500px;
+    transition: transform 0.3s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item:hover {
+    transition-duration: 0.6s;
+    transform: scale(1.05);
+    box-shadow: #FFFFFF 0px 4px 16px 0px;
+}  
+
+.project-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    color: #535C91;
+}
+
+.project-links a:hover {
+    color: #FFFFFF;
+}
+
+.view-more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.view-more-button {
+    background-color: #535C91;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: #FFFFFF 0px 0px 2px 0px;
+}
+
+.view-more-button:hover {
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    background-color: #9290C3;
+    box-shadow: #FFFFFF 0px 0px 16px 0px;
+    transform: translateY(5px);
+}
+
+.project-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    text-align: center;
+}
+
+.project-header span {
+    color: #9290C3;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.25);
+}
+
+
+.project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-container img {
+    max-width: 320px;
+    max-height: 240px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1124px) {
+    .main-content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .profile-content {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .download-button {
+        justify-content: center;
+    }
+
+    .nav-contents {
+        gap: 16px;
+        font-size: 16px;
+    }
+
+    .project-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
