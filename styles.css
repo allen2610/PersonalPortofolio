@@ -141,6 +141,8 @@ a {
 .social-media-icons {
     display: flex;
     gap: 32px;
+    font-size: 20px;
+    color: #FFFFFF
 }
 
 .social-media-icons img {
